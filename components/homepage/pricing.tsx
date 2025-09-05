@@ -191,7 +191,12 @@ export default function Pricing() {
 
   const handleCheckout = async (productId: string, subscription: boolean) => {
     try {
-      console.log("Creating Polar checkout for product:", productId, "subscription:", subscription);
+      console.log(
+        "Creating Polar checkout for product:",
+        productId,
+        "subscription:",
+        subscription
+      );
       const { data } = await axios.post(
         `/api/payments/create-checkout-session`,
         {

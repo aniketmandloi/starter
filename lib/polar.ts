@@ -108,11 +108,11 @@ export async function createCheckoutSession(
     const customer = await createOrGetCustomer(customerEmail);
 
     const checkout = await polar.checkouts.create({
-      productId,
+      products: [productId],
       customerId: customer.id,
       successUrl: successUrl || `${process.env.NEXT_PUBLIC_APP_URL}/success`,
       metadata,
-    } as any);
+    });
 
     return {
       id: checkout.id,
