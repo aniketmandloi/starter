@@ -90,12 +90,17 @@ UPSTASH_REDIS_REST_URL=
 UPSTASH_REDIS_REST_TOKEN=
 
 FRONTEND_URL=http://localhost:3000/
+NEXT_PUBLIC_APP_URL=http://localhost:3000
 
-STRIPE_SECRET_KEY=
-STRIPE_WEBHOOK_SECRET=
-NEXT_PUBLIC_STRIPE_PUBLIC_KEY=
+# Polar.sh Configuration
+POLAR_ACCESS_TOKEN=your_polar_access_token
+POLAR_WEBHOOK_SECRET=your_polar_webhook_secret
+POLAR_SERVER_URL=sandbox
 
-NEXT_PUBLIC_STRIPE_PRICE_ID=
+# Polar Product IDs (replace with your actual product IDs from Polar dashboard)
+NEXT_PUBLIC_POLAR_BASIC_PRODUCT_ID=your_basic_product_id
+NEXT_PUBLIC_POLAR_PRO_PRODUCT_ID=your_pro_product_id
+NEXT_PUBLIC_POLAR_ENTERPRISE_PRODUCT_ID=your_enterprise_product_id
 ```
 
 5. Run database migrations:
