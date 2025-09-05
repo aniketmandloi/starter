@@ -141,7 +141,6 @@ export function SignIn() {
                 )}
                 Sign in
               </Button>
-              <div id="clerk-captcha" />
             </form>
           </Form>
 
@@ -168,7 +167,7 @@ export function SignIn() {
           </Button>
 
           <div className="mt-4 text-center text-sm text-muted-foreground">
-            Don't have an account?{" "}
+            Don&apos;t have an account?{" "}
             <Button
               variant="link"
               className="pl-1 font-medium"
