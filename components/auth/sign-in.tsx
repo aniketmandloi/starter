@@ -141,6 +141,7 @@ export function SignIn() {
                 )}
                 Sign in
               </Button>
+              <div id="clerk-captcha" />
             </form>
           </Form>
 
